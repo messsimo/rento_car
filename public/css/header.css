@@ -1,0 +1,60 @@
+/* Стили для шапки */
+header {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    color: rgb(235, 12, 12);
+    font-size: 38px;
+    font-weight: bolder;
+}
+
+header .location,
+header .work-time,
+header .phone {
+    display: flex;
+}
+
+header .phone {
+    margin-top: -10px;
+}
+
+header .phone {
+    background-color: rgb(235, 12, 12);
+    padding: 10px 60px 10px 60px;
+    clip-path: polygon(40px 0%, 100% 0, 100% calc(100% - 40px), calc(100% - 40px) 100%, 0 100%, 0% 40px);
+}
+
+header .location svg {
+    fill: rgb(235, 12, 12);
+    width: 54px;
+    margin-right: 15px;
+    margin-top: -12px;
+}
+
+header .work-time svg {
+    fill: rgb(235, 12, 12);
+    width: 62px;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+
+header .location .header-main-text .main-text,
+header .work-time .header-main-text .main-text, 
+header .phone .header-main-text .main-text {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+
+header .location .header-main-text p,
+header .work-time .header-main-text p,
+header .phone .header-main-text p {
+    font-size: 16px;
+}
+
+header .phone .header-main-text p {
+    color: white;
+}
