@@ -8,5 +8,5 @@
 
 <!-- Подключние секции -->
 @section("main")
-
+ 
 @endsection

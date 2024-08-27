@@ -77,6 +77,7 @@ header .phone .header-main-text p {
     height: 65px;
     margin-top: 25px;
     display: flex;
+    justify-content: space-between;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -143,4 +144,33 @@ header .phone .header-main-text p {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+.nav .search {
+    margin-right: 100px;
+    height: 35px;
+    width: 500px;
+    margin-top: 15px;
+    display: flex;
+    line-height: 45px;
+}
+
+.nav .search svg {
+    width: 26px;
+    height: 26px;
+    margin-top: 4px;
+    margin-left: 5px;
+    margin-right: 10px;
+    position: absolute;
+    color: white;
+}
+
+.nav .search input {
+    font-size: 14px;
+    background-color: #efefef;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    padding-left: 35px;
+    outline: none;
 }

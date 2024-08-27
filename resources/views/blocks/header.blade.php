@@ -29,19 +29,28 @@
 
 <!-- Блок навигации -->
 <div class="nav">
-    <a href="">Main</a>
-    <a id="dropdown-button">Car Park</a>
-    <div class="dropdown-content">
-        <a href="" class="first-a">Sedan</a>
-        <hr>
-        <a href="">SUV</a>
-        <hr>
-        <a href="">Van</a>
-        <hr>
-        <a href="">Hatchback</a>
-        <hr>
+    <div class="nav-links">
+        <a href="">Main</a>
+
+        <a id="dropdown-button">Car Park</a>
+        <div class="dropdown-content">
+            <a href="" class="first-a">Sedan</a>
+            <hr>
+            <a href="">SUV</a>
+            <hr>
+            <a href="">Van</a>
+            <hr>
+            <a href="">Hatchback</a>
+            <hr>
+        </div>
+
+        <a href="">About us</a>
+        <a href="">Rental Rules</a>
+        <a href="">Contact</a>
     </div>
-    <a href="">About us</a>
-    <a href="">Rental Rules</a>
-    <a href="">Contact</a>
+
+    <div class="search">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24" width="24px" height="24px"><g id="Outlined"><g><polygon points="22,20 20,22 14,16 14,14 16,14 "/></g><circle style="fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;" cx="9" cy="9" r="6"/><line style="fill:none;stroke:#000000;stroke-miterlimit:10;" x1="13" y1="13" x2="15.5" y2="15.5"/></g></svg>
+        <input type="text" placeholder="Search...">
+    </div>
 </div>
