@@ -140,3 +140,43 @@ img {
 .cars .container .block a:hover {
     background-color: rgb(202, 16, 16);
 }
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.pagination ul li {
+    font-size: 20px;
+}
+
+.page-item.active .page-link {
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    background-color: rgb(235, 12, 12);
+    color: white;
+}
+
+.page-item.active .page-link:hover {
+    background-color: rgb(202, 16, 16);
+}
+
+.page-link {
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: rgb(38, 38, 38);
+}

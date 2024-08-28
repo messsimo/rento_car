@@ -9,9 +9,9 @@ class mainController extends Controller {
     // Функция показа всех машин
     public function allCars() {
         // Подключение к таблице `cars`
-        $cars = new cars();
+        $cars = cars::paginate(20);;
 
         // Переадрессация
-        return view("main", ["cars" => $cars->all()]);
+        return view("main", ["cars" => $cars]);
     }
 }
