@@ -21,15 +21,11 @@ img {
 }
 
 /* Cтили для блока Hero */
-.hero-shadow {
-    /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9); */
-}
-
 .hero {
     background-image: url("/images/hero.jpg");
     background-size: cover;
-    margin: 70px 200px;
-    height: 420px;
+    margin: 70px 150px;
+    height: 450px;
     box-shadow: inset 0 0 450px rgba(0, 0, 0, 0.9);
 }
 
@@ -55,4 +51,132 @@ img {
 
 .hero a:hover {
     background-color: rgb(202, 16, 16);
+}
+
+/* Стили для блока с машинами */
+.cars {
+    padding: 25px 100px;
+}
+
+.cars h1 {
+    text-align: center;
+    font-size: 38px;
+}
+
+.cars .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding-top: 100px;
+}
+
+.cars .container .block {
+    display: grid;
+    place-items: center;
+    border: 1px solid #ddd;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.cars .container .block img {
+    width: 230px;
+    margin-bottom: 20px;
+}
+
+.cars .container .block .car-name {
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.cars .container .block p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cars .container .block p b {
+    color: rgb(235, 12, 12);
+    font-weight: 500;
+}
+
+.cars .container .block .description {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    display: flex;
+}
+
+.cars .container .block .description .characteristic:first-child {
+    margin-right: 25px;
+}
+
+.cars .container .block .description .characteristic svg {
+    width: 24px;
+    fill: rgb(235, 12, 12);
+    stroke: rgb(235, 12, 12);
+    stroke-width: 1; 
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+.cars .container .block .description .characteristic span {
+    font-size: 14px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.cars .container .block a {
+    text-align: center;
+    padding: 7px 0;
+    margin-bottom: 35px;
+    width: 80%;
+    background-color: rgb(235, 12, 12);
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.cars .container .block a:hover {
+    background-color: rgb(202, 16, 16);
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.pagination ul li {
+    font-size: 20px;
+}
+
+.page-item.active .page-link {
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+    background-color: rgb(235, 12, 12);
+    color: white;
+}
+
+.page-item.active .page-link:hover {
+    background-color: rgb(202, 16, 16);
+}
+
+.page-link {
+    color: black;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: rgb(38, 38, 38);
 }
