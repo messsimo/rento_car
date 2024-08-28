@@ -14,5 +14,8 @@
 
     <!-- Подключение секций -->
     @yield("main")
+
+    <!-- Подключение JS -->
+    <script src="{{ asset('js/dropdown.js') }}"></script>
 </body>
 </html>
