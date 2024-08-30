@@ -1,0 +1,44 @@
+/* Стили для футера */
+footer {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 150px;
+}
+
+footer h1 {
+    color: red;
+    font-size: 38px;
+}
+
+footer .block {
+    width: 200px;
+    display: grid;
+}
+
+footer .block h2 {
+    color: white;
+    padding-bottom: 5px;
+    border-bottom: 3px solid red;
+}
+
+footer .block a,
+footer .block p {
+    padding-top: 7px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+}
+
+footer .block a:hover {
+    color: rgb(214, 214, 214);
+}
+
+footer .block .first-a {
+    padding-top: 10px;
+}
+
+footer .block p {
+    color: white;
+}

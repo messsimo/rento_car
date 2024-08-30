@@ -22,7 +22,7 @@
     <div class="phone">
         <div class="header-main-text">
             <p class="main-text">Number</p>
-            <p>+373 060029911</p>
+            <p>+373 678944088</p>
         </div>
     </div>
 </header>
