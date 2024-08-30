@@ -19,6 +19,43 @@
     <!-- Блок вывода машин -->
     <div class="cars">
         <h1>All cars</h1>
+
+        <!-- Фильтрация -->
+        <!-- <div class="filter-cars">
+            <div class="filter-category">
+                <div class="category-dropdown-btn">
+                    <span>Сategories</span>
+                    <svg id="category-btn" height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="111" x2="64" y1="40.5" y2="87.499"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="64" x2="17" y1="87.499" y2="40.5"/></g></svg>
+                </div>
+
+                <form action="" method="get">
+                    @csrf
+                    <div class="category-dropdown-block">
+                        @foreach ($categoryes as $el)
+                            <input type="checkbox"><span>{{ $el->name }}</span><br>
+                        @endforeach
+                    </div>
+                </form>
+            </div>
+
+            <div class="filter-price">
+                <div class="price-dropdown-btn">
+                    <span>Price</span>
+                    <svg class="price-svg" id="price-btn" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="111" x2="64" y1="40.5" y2="87.499"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="64" x2="17" y1="87.499" y2="40.5"/></g></svg>
+                </div>
+
+                <form action="" method="get">
+                    @csrf
+                    <div class="price-dropdown-block">
+                        <input type="checkbox"><span>30$-50$</span><br>
+                        <input type="checkbox"><span>50%-70$</span><br>
+                        <input type="checkbox"><span>70$-120$</span><br>
+                        <input type="checkbox"><span>120$-200$</span><br>
+                        <input type="checkbox"><span>From 200$</span><br>
+                    </div>
+                </form>
+            </div>
+        </div> -->
         
         <div class="container">
             @foreach ($cars as $el)
@@ -45,6 +82,84 @@
 
         <div class="pagination">
             {{ $cars->links('vendor.pagination.custom') }}
+        </div>
+    </div>
+
+    <!-- Блок с отзывами -->
+    <div class="reviews">
+        <h2>A few words</h2>
+        <h1>Recommendations from our clients</h1>
+
+        <div class="container">
+            <div class="sub-container">
+                <div class="block">
+                    <div class="review-text">
+                        <span>RentoCar este cel mai bun salon auto pe care l-am vizitat! Personalul este foarte profesionist și mașinile sunt într-o stare excelentă. Recomand cu căldură!</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people1.jpg') }}">
+                        <span>Andrean Popescu</span>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="review-text">
+                        <span>Лучшее место для аренды автомобиля! В RentoCar отличная команда и машины в прекрасном состоянии. Рекомендую всем!</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people2.jpg') }}">
+                        <span>Драгош Станеску</span>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="review-text">
+                        <span>Меня впечатлили услуги, предоставляемые RentoCar. Машина, которую я арендовал, была новой и очень комфортной. Обязательно вернусь!</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people3.jpg') }}">
+                        <span>Radu Lungu</span>
+                    </div>
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="sub-container"> -->
+                <div class="block">
+                    <div class="review-text">
+                        <span>I had a wonderful experience at RentoCar. The rental process was quick and easy, and the car was clean and well-maintained.</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people4.jpg') }}">
+                        <span>Olga Ivanova</span>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="review-text">
+                        <span>RentoCar m-a surprins plăcut cu profesionalismul lor. Am găsit exact mașina pe care o căutam și procesul de închiriere a fost fără probleme.</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people5.jpg') }}">
+                        <span>Maria Sokolova</span>
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="review-text">
+                        <span>RentoCar oferă o selecție excelentă de mașini la prețuri foarte competitive. Personalul a fost foarte amabil și m-a ajutat să găsesc mașina potrivită pentru nevoile mele.</span>
+                    </div>
+
+                    <div class="people">
+                        <img src="{{ asset('images/people6.jpg') }}">
+                        <span>Sorina Ciobanu</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

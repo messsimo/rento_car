@@ -17,5 +17,8 @@
 
     <!-- Подключение JS -->
     <script src="{{ asset('js/dropdown.js') }}"></script>
+    <script src="{{ asset('js/dropdown_cat.js') }}"></script>
+    <script src="{{ asset('js/dropdown_price.js') }}"></script>
+    <script src="{{ asset('js/corusell.js') }}"></script>
 </body>
 </html>

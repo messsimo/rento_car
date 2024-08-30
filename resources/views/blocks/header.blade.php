@@ -42,6 +42,7 @@
             <hr>
             <a href="">Hatchback</a>
             <hr>
+            <a href="">All</a>
         </div>
 
         <a href="">About us</a>
