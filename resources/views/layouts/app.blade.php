@@ -20,5 +20,6 @@
     <script src="{{ asset('js/dropdown_cat.js') }}"></script>
     <script src="{{ asset('js/dropdown_price.js') }}"></script>
     <script src="{{ asset('js/corusell.js') }}"></script>
+    <script src="{{ asset('js/corusell_adv.js') }}"></script>
 </body>
 </html>

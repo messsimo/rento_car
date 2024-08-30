@@ -1,5 +1,5 @@
 /* Шрифты */
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Базовые настройки */
 * {
@@ -8,12 +8,14 @@
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
 
 button, a {
     cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
 }
 
 img {
@@ -262,6 +264,9 @@ img {
     background-image: url("/images/review.jpg");
     background-size: cover;
     height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     box-shadow: inset 0 0 800px rgba(0, 0, 0, 0.9);
 }
 
@@ -269,13 +274,13 @@ img {
 .reviews h1 {
     text-align: center;
     color: white;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .reviews h2 {
     color: rgb(235, 12, 12);
     font-size: 21.5px;
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
 .reviews h1 {
@@ -283,7 +288,7 @@ img {
 }
 
 .reviews .container {
-    padding: 100px 130px 0 130px; 
+    padding: 80px 130px 0 130px; 
     overflow: hidden;
 }
 
@@ -336,4 +341,91 @@ img {
 .reviews .container .sub-container .block .people span {
     font-size: 14px;
     width: 70px;
+    margin-top: 5px;
 }
+
+/* Cтили для блока с преимущевтвами */
+.advantages {
+    padding: 70px 0;
+}
+
+.advantages h2 {
+    text-align: center;
+    color: rgb(235, 12, 12);
+    font-size: 36px;
+    padding-bottom: 25px;
+}
+
+.advantages .container {
+    padding: 50px 140px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.advantages .container .sub-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    position: relative;
+}
+
+.advantages .container .sub-container .sub-container-adv {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.advantages .container .sub-container .block {
+    background-color: white;    
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    max-width: 300px;
+    margin-right: 25px;
+    box-sizing: border-box;
+}
+
+.advantages .container .sub-container .block .block-top {
+    display: flex;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.advantages .container .sub-container .block .block-top h2 {
+    color: grey;
+    font-size: 36px;
+}
+
+.advantages .container .sub-container .block .block-top svg {
+    width: 48px;
+    height: 48px;
+    fill: rgb(235, 12, 12);
+    color: red;
+}
+
+.advantages .container .sub-container .block .main-text--block {
+    width: 100%;
+    height: 150px; 
+    box-sizing: border-box; 
+    margin: 25px;
+}
+
+.advantages .container .sub-container .block .main-text--block p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+    display: block; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    box-sizing: border-box; 
+    width: 80%; 
+}
+
+.advantages .container .sub-container .block .main-text--block span {
+    font-size: 16px;
+    width: 80%; 
+    display: block; 
+    white-space: normal; 
+    word-wrap: break-word; 
+    box-sizing: border-box; 
+}   
