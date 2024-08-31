@@ -11,7 +11,7 @@ use App\Http\Controllers\checkoutController;
 Route::get('/', [mainController::class, 'allCars'])->name("main");
 
 // Отслеживание страницы c категорией машин
-Route::get('/{category}', [categoryController::class, 'categoryCars'])->name("category_cars");
+Route::get('/category/{category}', [categoryController::class, 'categoryCars'])->name("category_cars");
 
 // Отслеживание страницы с информацией о машине
 Route::get('/car/{id}', [carController::class, 'infoCar'])->name("car_info");
@@ -19,3 +19,6 @@ Route::get('/car/{id}', [carController::class, 'infoCar'])->name("car_info");
 // Отслеживание страницу оформления заказа
 Route::get('/сheckout/{id}', [checkoutController::class, 'checkout'])->name("checkout");
 Route::post('/сheckout/{id}', [checkoutController::class, 'checkoutForm'])->name("checkoutForm");
+
+// Отслеживание второстепенных страниц
+Route::get('/rental_rules', [mainController::class, 'rentRules'])->name("rental_rules");

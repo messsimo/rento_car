@@ -10,9 +10,8 @@
 @section("category_car")
 <!-- Блок вывода машин -->
 <div class="cars">
-    <h1 class="category-h1">{{ $cars->first()->category }} cars</h1>
+    <h1 class="category-h1">{{ $category }} Сars</h1>
 
-        
         <div class="container">
             @foreach ($cars as $el)
             <div class="block"> 

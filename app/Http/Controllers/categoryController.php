@@ -13,8 +13,8 @@ class categoryController extends Controller {
         // Фильтрация данных по категории и использование пагинации
         $cars = cars::where('category', $category)->paginate(20);
         $categoryes = categoryes::all();
-
+    
         // Переадресация на страницу с выводом машин по категории
-        return view("category_car", ["cars" => $cars, "categoryes" => $categoryes]);
+        return view("category_car", ["cars" => $cars, "categoryes" => $categoryes, "category" => $category]);
     }
 }

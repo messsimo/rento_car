@@ -41,7 +41,7 @@
         </div>
 
         <a href="">About us</a>
-        <a href="">Rental Rules</a>
+        <a href="{{ route('rental_rules') }}">Rental Rules</a>
         <a href="#footer">Contact</a>
     </div>
 </div>

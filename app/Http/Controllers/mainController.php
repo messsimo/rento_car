@@ -9,11 +9,20 @@ use App\Models\categoryes;
 class mainController extends Controller {
     // Функция показа всех машин
     public function allCars() {
-        // Подключение к таблице `cars`
+        // Выборка из таблиц
         $cars = cars::paginate(20);
         $categoryes = categoryes::all();
 
         // Переадрессация
         return view("main", ["cars" => $cars, "categoryes" => $categoryes]);
+    }
+
+    // Функция отображения страницы сс правилами
+    public function rentRules() {
+        // Выборка из таблиц
+        $categoryes = categoryes::all();
+
+        // Переадрессация
+        return view("rental_rules", ["categoryes" => $categoryes]);
     }
 }
