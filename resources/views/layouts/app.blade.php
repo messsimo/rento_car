@@ -16,6 +16,7 @@
 
     <!-- Подключение секций -->
     @yield("main")
+    @yield("category_car")
 
     <!-- Подключение футера сайта -->
     @include("blocks.footer")

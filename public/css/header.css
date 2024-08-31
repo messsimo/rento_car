@@ -11,8 +11,8 @@ header {
 }
 
 header h1 {
-    color: rgb(235, 12, 12);
-    font-size: 36px;
+    color: red;
+    font-size: 38px;
     font-weight: bolder;
     font-family: "Archivo Black", sans-serif;
 }
@@ -112,6 +112,8 @@ header .phone .header-main-text p {
     width: 100%;
     margin-left: 13px;
     transition: 0.2s ease-in-out;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .nav .dropdown-content hr {
@@ -128,8 +130,8 @@ header .phone .header-main-text p {
 .nav .dropdown-content {
     position: absolute;
     z-index: 200;
-    top: 195px;
-    left: 150px;
+    top: 180px;
+    left: 160px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 150px;
