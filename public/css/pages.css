@@ -1,34 +1,42 @@
 /* Стили для страницы с правилоами */
-.rules {
-    padding: 50px 100px;
+.rules,
+.about_us {
+    padding: 0px 100px 50px 100px;
 }
 
-.rules h1 {
+.rules h1,
+.about_us h1 {
     padding-bottom: 15px;
 }
 
-.rules span {
+.rules span,
+.about_us span {
     font-size: 16px;
     font-weight: 400;
 }
 
-.rules h2 {
+.rules h2,
+.about_us h2 {
     padding-bottom: 10px;
     padding-top: 25px;
 }
 
-.rules p {
+.rules p,
+.about_us p {
     padding-top: 5px;
 }
 
-.rules .last-p {
-    padding-bottom: 50px;
+.rules .last-p,
+.about_us .last-p {
+    padding-bottom: 30px;
 }
 
-.rules h3 {
+.rules h3,
+.about_us h3 {
     border-top: 1px solid #ddd;
     width: 100%;
     padding-top: 10px;
     font-size: 28px;
     padding-bottom: 15px;
 }
+

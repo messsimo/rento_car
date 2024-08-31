@@ -17,12 +17,21 @@ class mainController extends Controller {
         return view("main", ["cars" => $cars, "categoryes" => $categoryes]);
     }
 
-    // Функция отображения страницы сс правилами
+    // Функция отображения страницы с правилами
     public function rentRules() {
         // Выборка из таблиц
         $categoryes = categoryes::all();
 
         // Переадрессация
         return view("rental_rules", ["categoryes" => $categoryes]);
+    }
+
+    // Функция отображения страницы о нас
+    public function aboutUs() {
+        // Выборка из таблиц
+        $categoryes = categoryes::all();
+
+        // Переадрессация
+        return view("about_us", ["categoryes" => $categoryes]);
     }
 }

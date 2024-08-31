@@ -23,6 +23,7 @@
     @yield("car_info")
     @yield("checkout")
     @yield("rentRules")
+    @yield("aboutUs")
 
     <!-- Подключение футера сайта -->
     @include("blocks.footer")

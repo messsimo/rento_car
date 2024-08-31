@@ -40,7 +40,7 @@
             @endforeach
         </div>
 
-        <a href="">About us</a>
+        <a href="{{ route('about_us') }}">About us</a>
         <a href="{{ route('rental_rules') }}">Rental Rules</a>
         <a href="#footer">Contact</a>
     </div>

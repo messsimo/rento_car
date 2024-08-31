@@ -22,3 +22,4 @@ Route::post('/сheckout/{id}', [checkoutController::class, 'checkoutForm'])->nam
 
 // Отслеживание второстепенных страниц
 Route::get('/rental_rules', [mainController::class, 'rentRules'])->name("rental_rules");
+Route::get('/about_us', [mainController::class, 'aboutUs'])->name("about_us");
