@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
@@ -187,81 +191,6 @@ img {
 .page-link:hover {
     color: rgb(38, 38, 38);
 }
-
-/* Стили для фильтрации */
-/* .filter-cars {
-    display: flex;
-    padding-top: 50px;
-}
-
-.filter-category .category-dropdown-btn,
-.filter-price .price-dropdown-btn {
-    display: flex;
-    border: 1px solid #ddd;
-    border-radius: 2px;
-    min-width: 250px;
-    max-width: 250px;
-    margin-right: 50px;
-}
-
-.filter-category .category-dropdown-btn span,
-.filter-price .price-dropdown-btn span{
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-}
-
-.filter-category .category-dropdown-btn svg,
-.filter-price .price-dropdown-btn svg {
-    width: 16px;
-    height: 16px;
-    padding-top: 13px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-left: 130px;
-}
-
-.filter-price .price-dropdown-btn .price-svg {
-    padding-left: 170px;
-}
-
-.filter-category form,
-.filter-price form {
-    width: 0;
-    height: 0;
-}
-
-.filter-category form .category-dropdown-block,
-.filter-price form .price-dropdown-block {
-    box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
-    background-color: white;
-    position: absolute;
-    padding: 15px;
-    min-width: 220px;
-    max-width: 220px;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
-}
-
-.filter-price form .price-dropdown-block.show,
-.filter-category form .category-dropdown-block.show {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
-
-.filter-category form .category-dropdown-block input,
-.filter-price form .price-dropdown-block input {
-    margin-right: 7px;
-    margin-bottom: 7px;
-}
-
-.filter-category form .category-dropdown-block span,
-.filter-price form .price-dropdown-block span {
-    font-size: 15px;
-} */
 
 /* Cтили для блока с отзывами */
 .reviews {

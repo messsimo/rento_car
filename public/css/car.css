@@ -1,0 +1,125 @@
+/* Стили для блока со всей информацией */
+.car-info {
+    padding: 50px 100px;
+    display: flex;
+}
+
+.car-info .container-left {
+    width: 70%;
+}
+
+.car-info .container-left img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    /* margin-top: -50px; */
+    margin-bottom: 50px;
+}
+
+.car-info .container-left .description {
+    width: 90%;
+}
+
+.car-info .container-left .description p {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.car-info .container-left .description span {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.car-info .container {
+    padding-top: 30px;
+    width: 30%;
+}
+
+.car-info .container h1 {
+    font-size: 38px;
+    padding-bottom: 15px;
+}
+
+.car-info .container h3 {
+    font-weight: 500;
+    padding-bottom: 28px;
+}
+
+.car-info .container h3 b {
+    font-weight: 500;
+    color: rgb(235, 12, 12);
+}
+
+/* .car-info .container .characteristic {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+
+.car-info .container .characteristic .block p {
+    padding-bottom: 5px;
+    font-size: 17px;
+    font-weight: 400;
+} */
+
+.car-info .container .link {
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 105px;
+    border-radius: 2px; 
+    transition: 0.2s ease-in-out;
+}
+
+.car-info .container .link:hover {
+    background-color: rgb(202, 16, 16);
+}
+
+/* .car-info .container table {
+    margin-top: 25px;
+    width: 85%;
+}
+
+.car-info .container table tr th {
+    text-align: left;
+}
+
+.car-info .container table tr td {
+    text-align: right;
+} */
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+th,
+td {
+    font-size: 14px;
+    padding: 7px 10px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+}
+
+th {
+    color: #333;
+    font-weight: bold;
+}
+
+/* td::before {
+    margin-right: 5px;
+} */

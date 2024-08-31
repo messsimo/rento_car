@@ -12,51 +12,14 @@
     <div class="hero-shadow">
         <div class="hero">
             <h1>On Wheels to New Adventures!</h1>
-            <a href="">Take a car</a>
+            <a href="#cars">Take a car</a>
         </div>
     </div>
 
     <!-- Блок вывода машин -->
-    <div class="cars">
+    <div class="cars" id="cars">
         <h1>All cars</h1>
-
-        <!-- Фильтрация -->
-        <!-- <div class="filter-cars">
-            <div class="filter-category">
-                <div class="category-dropdown-btn">
-                    <span>Сategories</span>
-                    <svg id="category-btn" height="128px" id="Layer_1" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="111" x2="64" y1="40.5" y2="87.499"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="64" x2="17" y1="87.499" y2="40.5"/></g></svg>
-                </div>
-
-                <form action="" method="get">
-                    @csrf
-                    <div class="category-dropdown-block">
-                        @foreach ($categoryes as $el)
-                            <input type="checkbox"><span>{{ $el->name }}</span><br>
-                        @endforeach
-                    </div>
-                </form>
-            </div>
-
-            <div class="filter-price">
-                <div class="price-dropdown-btn">
-                    <span>Price</span>
-                    <svg class="price-svg" id="price-btn" style="enable-background:new 0 0 128 128;" version="1.1" viewBox="0 0 128 128" width="128px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="111" x2="64" y1="40.5" y2="87.499"/><line style="fill:none;stroke:#2F3435;stroke-width:12;stroke-linecap:square;stroke-miterlimit:10;" x1="64" x2="17" y1="87.499" y2="40.5"/></g></svg>
-                </div>
-
-                <form action="" method="get">
-                    @csrf
-                    <div class="price-dropdown-block">
-                        <input type="checkbox"><span>30$-50$</span><br>
-                        <input type="checkbox"><span>50%-70$</span><br>
-                        <input type="checkbox"><span>70$-120$</span><br>
-                        <input type="checkbox"><span>120$-200$</span><br>
-                        <input type="checkbox"><span>From 200$</span><br>
-                    </div>
-                </form>
-            </div>
-        </div> -->
-        
+     
         <div class="container">
             @foreach ($cars as $el)
             <div class="block"> 
@@ -75,7 +38,7 @@
                     </div>
                 </div>
 
-                <a href="">Rent</a>
+                <a href="{{ route('car_info', $el->id) }}">Rent</a>
             </div>
             @endforeach
         </div>

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/car.css') }}">
 
     <title>@yield("title")</title>
 </head>
@@ -17,6 +18,7 @@
     <!-- Подключение секций -->
     @yield("main")
     @yield("category_car")
+    @yield("car_info")
 
     <!-- Подключение футера сайта -->
     @include("blocks.footer")

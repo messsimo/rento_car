@@ -1,12 +1,12 @@
 <!-- Секциия футера сайта -->
 @section("footer")
-<footer>    
+<footer id="footer">    
     <h1>Rento Car</h1>
 
     <div class="block">
         <h2>More info</h2>
 
-        <a href="" class="first-a">All cars</a>
+        <a href="{{ route('main') }}" class="first-a">All cars</a>
         <a href="">About us</a>
         <a href="">Rent Rules</a>
     </div>

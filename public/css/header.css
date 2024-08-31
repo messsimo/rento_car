@@ -17,6 +17,10 @@ header h1 {
     font-family: "Archivo Black", sans-serif;
 }
 
+header a {
+    text-decoration: none;
+}
+
 header img {
     width: 150px;
     height: 150px;
