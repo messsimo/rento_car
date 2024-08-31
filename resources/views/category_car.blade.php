@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <a href="">Rent</a>
+                <a href="{{ route('car_info', $el->id) }}">Rent</a>
             </div>
             @endforeach
         </div>

@@ -1,0 +1,81 @@
+/* Стили для старницы оформления заказа */
+.checkout {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout form h2 {
+    font-size: 32px;
+    margin-bottom: -20px;
+}
+
+.checkout form label {
+    color: grey;
+    font-size: 16px;
+}
+
+.checkout form input {
+    padding-left: 10px;
+    height: 35px;
+    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 14px;
+}
+
+.checkout form button {
+    width: 412px;
+    height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: red;
+    border: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    border-radius: 2px;
+}
+
+.checkout form button:hover { 
+    background-color: rgb(202, 16, 16);
+}
+
+.checkout .container {
+    margin-top: -10px;
+}
+
+
+.checkout .container h1 {
+    padding-bottom: 25px;
+    font-size: 32px;
+}
+
+.checkout form .alert-success {
+    background-color: #d4edda;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.checkout form .alert-success span {
+    font-size: 14px;
+}
+
+.checkout .alert {
+    background-color: #f8d7da;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    padding: 15px;
+    border-radius: 2px;
+}
+
+.checkout .alert ul {
+    list-style: none
+}
+
+.checkout .alert ul li {
+    padding-bottom: 3px;
+    font-size: 14px;
+}

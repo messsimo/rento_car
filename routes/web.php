@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\categoryController;
 use App\Http\Controllers\carController;
+use App\Http\Controllers\checkoutController;
 
 // Отслеживание главной страницы
 Route::get('/', [mainController::class, 'allCars'])->name("main");
@@ -14,3 +15,7 @@ Route::get('/{category}', [categoryController::class, 'categoryCars'])->name("ca
 
 // Отслеживание страницы с информацией о машине
 Route::get('/car/{id}', [carController::class, 'infoCar'])->name("car_info");
+
+// Отслеживание страницу оформления заказа
+Route::get('/сheckout/{id}', [checkoutController::class, 'checkout'])->name("checkout");
+Route::post('/сheckout/{id}', [checkoutController::class, 'checkoutForm'])->name("checkoutForm");

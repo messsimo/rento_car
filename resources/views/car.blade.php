@@ -8,6 +8,11 @@
 
 <!-- Подключние секции -->
 @section("car_info")
+    <!-- Блок навигации -->
+    <div class="web-nav">
+        <span>Main > {{ $cars->name }}</span>
+    </div>
+
     <!-- Блок с информацией о машине -->
     <div class="car-info">
         <div class="container-left">
@@ -22,23 +27,8 @@
             <h1>{{ $cars->name }}</h1>
 
             <h3>from <b>{{ $cars->price }}</b>/day</h3>
-<!-- 
-            <div class="characteristic">
-                <div class="block">
-                    <p>Year: {{ $cars->car_year }}</p>      
-                    <p>Engine: {{ $cars->car_engine }}</p>
-                    <p>Capacity: {{ $cars->car_engine_capacity }}</p>
-                    <p>Gearbox: {{ $cars->car_gearbox }}</p>
-                </div>
 
-                <div class="block">
-                    <p>Category: {{ $cars->category }}</p>
-                    <p>Doors: {{ $cars->car_doors }}</p>           
-                    <p>Seats: {{ $cars->car_seats }}</p>
-                </div>
-            </div> -->
-
-            <a href="" class="link">Book a rental</a>
+            <a href="{{ route('checkout', $cars->id ) }}" class="link">Book a rental</a>
 
             <table>
                 <tbody>

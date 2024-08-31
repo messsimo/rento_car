@@ -80,46 +80,39 @@
     background-color: rgb(202, 16, 16);
 }
 
-/* .car-info .container table {
-    margin-top: 25px;
-    width: 85%;
-}
-
-.car-info .container table tr th {
-    text-align: left;
-}
-
-.car-info .container table tr td {
-    text-align: right;
-} */
-
-table {
+.car-info .container table {
     width: 85%;
     border-collapse: collapse;
     margin: 20px 0;
 }
 
-tr {
+.car-info .container table tr {
     border-bottom: 1px solid #ddd;
 }
 
-tr:last-child {
+.car-info .container table tr:last-child {
     border-bottom: none;
 }
 
-th,
-td {
+.car-info .container table th,
+.car-info .container table td {
     font-size: 14px;
     padding: 7px 10px;
     text-align: left;
-    /* border-bottom: 1px solid #ddd; */
 }
 
-th {
+.car-info .container table th {
     color: #333;
     font-weight: bold;
 }
 
-/* td::before {
-    margin-right: 5px;
-} */
+/* Стили для навигации */
+.web-nav {
+    padding: 25px 100px;
+}
+
+.web-nav span {
+    font-size: 14px;
+    font-weight: 200;
+    vertical-align: bottom;
+}
