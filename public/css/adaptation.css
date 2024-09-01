@@ -137,10 +137,60 @@
     .car-info .container {
         width: 100%;
     }
+
+    .web-nav {
+        padding: 25px 50px;
+    }
 }
 
 @media (max-width: 440px) {
     .car-info {
         padding: 25px 25px;
+    }
+}
+
+/* Адаптация для страницы бронирования */
+@media (max-width: 1180px) {
+    .checkout {
+        padding: 50px 50px;
+    }
+}
+
+@media (max-width: 980px) {
+    .web-nav {
+        padding: 25px 50px;
+    }
+
+    .checkout {
+        padding: 50px 25px;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+    }
+
+    .checkout .container {
+        margin-top: 50px;
+    }
+
+    .checkout .container h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .web-nav {
+        padding: 25px 25px;
+    }
+
+    .checkout form button {
+        width: 292px;
+    }
+
+    .checkout form input {
+        width: 280px;
+    }
+
+    .checkout form {
+        width: 300px;
     }
 }
