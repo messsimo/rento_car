@@ -121,3 +121,26 @@
         margin-bottom: 55px;
     }
 }
+
+/* Адаптация для страницы о машине */
+@media (max-width: 980px) {
+    .car-info {
+        padding: 50px 50px;
+        display: grid;
+        place-items: center;
+    }
+
+    .car-info .container-left {
+        width: 100%;
+    }
+
+    .car-info .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 440px) {
+    .car-info {
+        padding: 25px 25px;
+    }
+}

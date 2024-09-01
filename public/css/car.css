@@ -53,25 +53,13 @@
     color: rgb(235, 12, 12);
 }
 
-/* .car-info .container .characteristic {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 25px;
-}
-
-.car-info .container .characteristic .block p {
-    padding-bottom: 5px;
-    font-size: 17px;
-    font-weight: 400;
-} */
-
 .car-info .container .link {
     background-color: red;
     color: white;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
-    padding: 10px 105px;
+    padding: 10px 25px;
     border-radius: 2px; 
     transition: 0.2s ease-in-out;
 }

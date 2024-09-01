@@ -7,8 +7,8 @@
         <h2>More info</h2>
 
         <a href="{{ route('main') }}" class="first-a">All cars</a>
-        <a href="">About us</a>
-        <a href="">Rent Rules</a>
+        <a href="{{ route('about_us') }}">About us</a>
+        <a href="{{ route('rental_rules') }}">Rent Rules</a>
     </div>
 
     <div class="block">
