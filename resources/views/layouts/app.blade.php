@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/car.css') }}">
     <link rel="stylesheet" href="{{ asset('css/checkout.css') }}">
     <link rel="stylesheet" href="{{ asset('css/pages.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/adaptation.css') }}">
 
     <title>@yield("title")</title>
 </head>
@@ -30,9 +31,8 @@
 
     <!-- Подключение JS -->
     <script src="{{ asset('js/dropdown.js') }}"></script>
-    <script src="{{ asset('js/dropdown_cat.js') }}"></script>
-    <script src="{{ asset('js/dropdown_price.js') }}"></script>
     <script src="{{ asset('js/corusell.js') }}"></script>
     <script src="{{ asset('js/corusell_adv.js') }}"></script>
+    <script src="{{ asset('js/burger.js') }}"></script>
 </body>
 </html>

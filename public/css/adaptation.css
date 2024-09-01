@@ -1,0 +1,49 @@
+/* Адаптация шапки сайта страницы */
+@media (max-width: 1120px) {
+    header {
+        padding: 40px 50px 0 50px;
+    }
+}
+
+@media (max-width: 980px) {
+    .nav {
+        display: none;
+        place-items: center;
+        height: 430px;
+    }
+    
+    .nav a {    
+        display: block;
+        text-align: center;
+    }
+    
+    .nav a:first-child {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
+    
+    .nav .dropdown-content a {    
+        text-align: left;
+    }
+    
+    .nav .dropdown-content {
+        left: 40%; 
+        top: 40%;
+    }
+
+    header .burger {
+        display: block;
+    }
+
+    header {
+        padding: 30px 50px;
+    }
+
+    header .location, header .work-time, header .phone {
+        display: none;
+    }
+
+    .nav .dropdown-content a:first-child {
+        margin-left: 10px;
+    }
+}

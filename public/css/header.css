@@ -1,8 +1,9 @@
 /* Стили для шапки */
 header {
-    padding: 40px 100px 0 100px;
+    padding: 40px 100px 40px 100px;
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header-top span {
@@ -79,10 +80,20 @@ header .phone .header-main-text p {
     background-color: black;
     width: 100%;
     height: 65px;
-    margin-top: 25px;
     display: flex;
     justify-content: space-between;
     box-shadow: 0 12px 12px rgba(0, 0, 0, 0.1);
+
+    /* display: none;
+    display: grid;
+    place-items: center;
+    height: 430px; */
+}
+
+.nav.active {
+    display: block;
+    position: absolute;
+    z-index: 100;
 }
 
 .nav a {
@@ -120,6 +131,10 @@ header .phone .header-main-text p {
     font-size: 18px;
 }
 
+.nav .dropdown-content a:first-child {
+    margin-top: 0;
+}
+
 .nav .dropdown-content hr {
     color: #ddd;
     width: 85%;
@@ -134,12 +149,9 @@ header .phone .header-main-text p {
 .nav .dropdown-content {
     position: absolute;
     z-index: 200;
-    top: 180px;
-    left: 160px;
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 150px;
-
     opacity: 0;
     visibility: hidden;
     transform: translateY(-10px);
@@ -149,5 +161,15 @@ header .phone .header-main-text p {
 .nav .dropdown-content.show {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+    transform: translate(0%, 0);
 }
+
+header .burger {
+    display: none;
+}
+
+header .burger svg {
+    width: 36px;
+    height: 36px;
+    margin-top: 5px;
+} 
